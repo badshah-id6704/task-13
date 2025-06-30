@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Tasks - Badshah Kumar</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #dfe9f3);
+      color: #343a40;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      background: #ffffff;
+      max-width: 700px;
+      margin: 60px auto;
+      padding: 30px 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    h1 {
+      color: #007bff;
+      margin-bottom: 20px;
+    }
+    .highlight {
+      background-color: #e3f2fd;
+      color: #0d47a1;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      font-weight: bold;
+    }
+    .note {
+      margin-top: 30px;
+      font-size: 0.95em;
+      color: #6c757d;
+    }
+    code {
+      background: #f8f9fa;
+      padding: 4px 8px;
+      border-radius: 4px;
+      color: #d63384;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Tasks Output</h1>
+    <div class="highlight">👀 Open the browser console to view the output</div>
+    <p><strong>Name:</strong> Badshah Kumar</p>
+    <p><strong>Address:</strong> Vill-Bhanpur Barewa, Post-Padmaul,PS-Goraul,District-Vaishali,Pin-code-844118.</p>
+    <div class="note">All tasks are executed in JavaScript using console.log()</div>
+  </div>
+
+  <script>
+    // 1. Print name and address
+    let name = "Badshah Kumar";
+    let address = "Vill-Bhanpur Barewa, Post-Padmaul,PS-Goraul,District-Vaishali,Pin-code-844118.";
+    console.log("1. Name:", name);
+    console.log("   Address:", address);
+    console.log(" ");
+
+    // 2. Check if value and data-type are the same
+    function isSameValueAndType(a, b) {
+      return a === b;
+    }
+    console.log("2. isSameValueAndType(5, '5'):", isSameValueAndType(5, '5'));
+    console.log("   isSameValueAndType(5, 5):", isSameValueAndType(5, 5));
+    console.log(" ");
+
+    // 3. Add strings and return all alphabet capital
+    function addStringsUpper(str1, str2) {
+      return (str1 + str2).toUpperCase();
+    }
+    console.log("3. addStringsUpper('web', 'dev'):", addStringsUpper('web', 'dev'));
+    console.log(" ");
+
+    // 4. Convert string length to bytes
+    function stringLengthInBytes(str) {
+      return new TextEncoder().encode(str).length;
+    }
+    console.log("4. stringLengthInBytes('hello'):", stringLengthInBytes('hello'), "bytes");
+    console.log(" ");
+
+    // 5. Round to specific digits
+    function roundToDigits(num, digits) {
+      return Number(num.toFixed(digits));
+    }
+    console.log("5. roundToDigits(7.58432, 2):", roundToDigits(7.58432, 2));
+  </script>
+</body>
+</html>
